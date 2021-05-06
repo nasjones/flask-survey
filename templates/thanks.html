@@ -1,0 +1,7 @@
+{% extends 'base.html'%} {% block title%}
+<title>Thank You!</title>
+{%endblock%} {% block content%}
+<h1>Thank you for answering our questions.</h1>
+{%for message in get_flashed_messages()%}
+<p>{{message}}</p>
+{%endfor%} {%endblock%}
